@@ -1,12 +1,13 @@
-#include "LamborghiniDoor.cpp"
+#include "LamborghiniDoor.h"
 #include <iostream>
+#include <string>
 
-LamborghiniDoor::LamborghiniDoor(String color, int Height, int Width){
-	this.color = color;
+LamborghiniDoor::LamborghiniDoor(string color, int Height, int Width){
+	this.Color = color;
 	this.Height = Height;
 	this.Width = Width;
 }
 
 void LamborghiniDoor::printInfo(){
-	std::cout << color << "Lamborghini door (" << Height <<","<< Width << ")" <<std::endl;
+	std::cout << Color << "Lamborghini door (" << Height <<","<< Width << ")" <<std::endl;
 }

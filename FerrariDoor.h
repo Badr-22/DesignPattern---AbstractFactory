@@ -2,6 +2,7 @@ ifndef FERRARI_DOOR
 #define FERRARI_DOOR
 
 #include "AbstractDoor.h"
+#include <string>
 
 class FerrariDoor : public AbstractDoor {
 	public:

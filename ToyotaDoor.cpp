@@ -1,12 +1,13 @@
-#include "ToyotaDoor.cpp"
+#include "ToyotaDoor.h"
 #include <iostream>
+#include <string>
 
-ToyotaDoor::ToyotaDoor(String color, int Height, int Width){
-	this.color = color;
+ToyotaDoor::ToyotaDoor(string color, int Height, int Width){
+	this.Color = color;
 	this.Height = Height;
 	this.Width = Width;
 }
 
 void ToyotaDoor::printInfo(){
-	std::cout << color << "Toyota door (" << Height <<","<< Width << ")" <<std::endl;
+	std::cout << Color << "Toyota door (" << Height <<","<< Width << ")" <<std::endl;
 }

@@ -1,10 +1,11 @@
 ifndef ABSTRACT_FACTORY
 #define ABSTRACT_FACTORY
 
+#include <string>
+
 class AbstractFactory {
 	public:
-		virtual AbstractDoor *create_door(string Color) =0;
-		virtual AbstractWheel *create_wheel(string wheel) =0; 
+		virtual Car *create_car(string Color) =0; 
 };
 
 #endif
