@@ -1,15 +1,15 @@
-ifndef CLIENT
+#ifndef CLIENT
 #define CLIENT
 
-#include "AbstractFactory.h"
-#include <string>
+#include"AbstractFactory.h"
 
 class Client{
-	public:
+public:
+	AbstractFactory* factory;
 
-		AbstractFactory factory;
+	Client(AbstractFactory* factory);
 
-		void create_car(string Color);
+	void create_car(int Color);
 
 };
 

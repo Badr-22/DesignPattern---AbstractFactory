@@ -10,8 +10,8 @@ LamborghiniFactory.o: LamborghiniWheel.h AbstractWheel.h LamborghiniDoor.h Abstr
 	g++ -c -Wall --std=c++17 LamborghiniFactory.cpp	
 ToyotaFactory.o: ToyotaWheel.h AbstractWheel.h ToyotaDoor.h AbstractDoor.h Car.h ToyotaFactory.h ToyotaFactory.cpp
 	g++ -c -Wall --std=c++17 ToyotaFactory.cpp	
-Car.o: AbstractWheel.h AbstractDoor.h car.h car.cpp
-	g++ -c -Wall --std=c++17 car.cpp
+Car.o: AbstractWheel.h AbstractDoor.h Car.h Car.cpp
+	g++ -c -Wall --std=c++17 Car.cpp
 ToyotaWheel.o: ToyotaWheel.h AbstractWheel.h ToyotaWheel.cpp
 	g++ -c -Wall --std=c++17 ToyotaWheel.cpp	
 LamborghiniWheel.o: LamborghiniWheel.h AbstractWheel.h LamborghiniWheel.cpp

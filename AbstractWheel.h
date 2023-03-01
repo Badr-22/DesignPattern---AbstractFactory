@@ -1,11 +1,9 @@
-ifndef ABSTRACT_WHEEL
+#ifndef ABSTRACT_WHEEL
 #define ABSTRACT_WHEEL
-
-#include <string>
 
 class AbstractWheel {
 	public:
-		string Color;
+		int Color;
 		int Diameter;
 
 		virtual void printInfo() =0;

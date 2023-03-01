@@ -5,10 +5,9 @@
 #include "LamborghiniWheel.h"
 #include "Car.h"
 #include <iostream>
-#include <string>
 
-LamborghiniFactory::create_car(string color){
-	AbstractDoor door = new LamborghiniDoor(color,20,20);
-	AbsractWheel wheel = new LamborghiniWheel(color,15)
+Car* LamborghiniFactory::create_car(int color){
+	AbstractDoor* door = new LamborghiniDoor(color,15,15);
+	AbstractWheel* wheel = new LamborghiniWheel(color,12);
 	return new Car(color,door,wheel);
 }

@@ -1,18 +1,17 @@
-ifndef CAR
+#ifndef CAR
 #define CAR
 
 #include"AbstractWheel.h"
 #include"AbstractDoor.h"
-#include <string>
 
 class Car {
 	public:
 
-		AbstractDoor Door;
-		AbsractWheel Wheel;
-		string Color;
+		AbstractDoor* Door;
+		AbstractWheel* Wheel;
+		int Color;
 
-		Car(string Color, AbstractDoor Door, AbstractWheel wheel);
+		Car(int Color, AbstractDoor* Door, AbstractWheel* wheel);
 		void printInfo();
 
 };

@@ -5,10 +5,9 @@
 #include "ToyotaWheel.h"
 #include "Car.h"
 #include <iostream>
-#include <string>
 
-ToyotaFactory::create_car(string color){
-	AbstractDoor door = new ToyotaDoor(color,20,20);
-	AbsractWheel wheel = new ToyotaWheel(color,15)
+Car* ToyotaFactory::create_car(int color){
+	AbstractDoor* door = new ToyotaDoor(color,10,10);
+	AbstractWheel* wheel = new ToyotaWheel(color,8);
 	return new Car(color,door,wheel);
 }

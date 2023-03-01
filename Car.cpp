@@ -1,15 +1,14 @@
 #include "Car.h"
 #include <iostream>
-#include <string>
 
-Car::Car(string color, AbstractDoor door, AbstractWheel wheel){
-	this.Color = color;
-	this.Door = door;
-	this.wheel = wheel;
+Car::Car(int color, AbstractDoor* door, AbstractWheel* wheel){
+	this->Color = color;
+	this->Door = door;
+	this->Wheel = wheel;
 }
 
 void Car::printInfo(){
 	std::cout << Color << " Car with the following components : " <<std::endl;
-	door.printInfo();
-	wheel.printInfo();
+	Door->printInfo();
+	Wheel->printInfo();
 }
